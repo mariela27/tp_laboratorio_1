@@ -51,9 +51,9 @@ float multiplicacion(float A, float B)
 float factorial(float A)
 {
     int i=0;
-    int numero;
+    int A;
     int factorial=1;
-        for (i=numero; i>0; i--)
+        for (i=A; i>0; i--)
         {
             factorial=factorial*i;
         }
