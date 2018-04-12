@@ -8,7 +8,6 @@ float sumar(float A, float B)
     float suma;
 
     suma = A + B;
-
     return (suma);
 }
 
@@ -26,7 +25,7 @@ float division(float A, float B)
 {
     float d;
 
-    if(B!=0)
+    if(B==0)
     {
         printf("\n\nIngrese un valor distinto a 0 para el divisor:\n\n");
         scanf("%f",&B);
@@ -48,11 +47,15 @@ float multiplicacion(float A, float B)
 }
 
 
-float factorial(float A)
+void factorial(float A)
 {
     int i=0;
-    int A;
+    float A;
     int factorial=1;
+    if()
+    {
+
+    }
         for (i=A; i>0; i--)
         {
             factorial=factorial*i;
@@ -61,3 +64,4 @@ float factorial(float A)
 
 
 }
+

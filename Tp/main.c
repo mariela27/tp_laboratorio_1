@@ -9,6 +9,7 @@ int main()
     float B;
     float resultado;
 
+
     while(seguir=='s')
     {
         printf("1- Ingresar 1er operando (A=%f)\n",A);
@@ -36,57 +37,46 @@ int main()
 
             case 3: //suma
 
-                printf("\nIngrese el primer numero:");
-                scanf("%f",&A);
-                printf("\nIngrese el segundo numero:");
-                scanf("%f",&B);
-                resultado=A+B;
-                printf("\nEl resultado es: %.2f \n",A,B,resultado);
+                resultado=sumar(A,B);
+                printf("El resultado de la suma es %f\n",resultado);
                 break;
 
             case 4: //resta
 
-                printf("\nIngrese el primer numero:");
-                scanf("%f",&A);
-                printf("\nIngrese el segundo numero:");
-                scanf("%f",&B);
-                resultado=A-B;
-                printf("\nEl resultado es: %.2f \n",A,B,resultado);
+                resultado=restar(A,B);
+                printf("El resultado de la resta es %f\n",resultado);
                 break;
+
 
             case 5: //division
 
-                printf("\nIngrese el dividendo:");
-                scanf("%f",&A);
-                printf("\nIngrese el divisor:");
-                scanf("%f",&B);
-                resultado=A/B;
-                printf("\n\nEl resultado es: %.2f \n",A,B,resultado);
+                resultado=division(A,B);
+                printf("El resultado de la resta es %f\n",resultado);
                 break;
 
             case 6: //multiplicacion
 
-                printf("\nIngrese el multiplicando:");
-                scanf("%f",&A);
-                printf("\nIngrese el multiplicador:");
-                scanf("%f",&B);
-                resultado=A*B;
-                printf("\n\nEl resultado es: %.2f \n",A,B,resultado);
+                resultado=multiplicacion(A,B);
+                printf("El resultado de la multiplicacion es %f\n",resultado);
                 break;
 
             case 7:
 
                 resultado=factorial(A);
-                printf("\n\nEl resultado es: %.2f \n\n",resultado);
-                break;
+                printf("El resultado es: %f\n",resultado);
+                break;*/
             case 8:
 
-                printf("A=%.2f\nB=%.2f\n",A,B);
-                printf("Resultado de la SUMA es: %f\n",suma(A+B));
-                printf("Resultado de la RESTA es: %f\n",resta(A-B));
-                printf("Resultado de la MULTIPLICACION es: %f\n",multiplicacion(A*B));
-                printf("Resultado de la DIVICION es: %f\n",division(A/B));
-                printf("El Factorial de A es %f\n",factorial(A));
+                resultado=sumar(A,B);
+                printf("El resultado de la suma es %f\n",resultado);
+                resultado=restar(A,B);
+                printf("El resultado de la resta es %f\n",resultado);
+                resultado=division(A,B);
+                printf("El resultado de la resta es %f\n",resultado);
+                resultado=multiplicacion(A,B);
+                printf("El resultado de la multiplicacion es %f\n",resultado);
+                resultado=factorial(A);
+                printf("El resultado es: %f\n",resultado);
                 break;
             case 9:
 

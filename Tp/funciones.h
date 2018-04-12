@@ -10,20 +10,20 @@
  * \param float B segundo operando
  * \return float resultado de suma
  */
-float suma(float A, float B);
+float sumar(float A, float B);
 
 /** \brief resta dos numeros decimales (float)
  * \param float A primer operando
  * \param float B segundo operando
  * \return float resultado de la resta
- */
-float resta(float A, float B);
+*/
+float restar(float A, float B);
 
 /** \brief division de dos numeros decimales (float)
  * \param float A dividendo
  * \param float B divisor
  * \return float resultado de la division
- */
+*/
 float division(float A, float B);
 
 
@@ -31,13 +31,14 @@ float division(float A, float B);
  * \param float A multiplicando
  * \param float B multiplicador
  * \return float resultado del producto total
- */
+*/
 float multiplicacion(float A, float B);
 
 /** \brief El factoreo de el numero ingresado
  *
- * \param A float numero a ser factoreado
- * \return float resultado de factoreo
+ * \param  float A numero a ser factoreado
+ * \return float resultado del factoreo
  *
- */
-float factorial(float A);
+*/
+void factorial(float A);
+
